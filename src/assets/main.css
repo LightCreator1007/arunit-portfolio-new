@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #1c1b18;
+  --color-cream: #f4efe6;
+  --color-paper: #fbf8f2;
+  --color-mustard: #e3d3a3;
+  --color-lilac: #c9b8e8;
+
+  --font-grotesk: 'Space Grotesk', sans-serif;
+  --font-archivo: 'Archivo Black', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-serif: 'Instrument Serif', serif;
+
+  --shadow-brutal: 4px 4px 0px 0px var(--color-ink);
+  --shadow-brutal-lg: 7px 7px 0px 0px var(--color-ink);
+  --shadow-brutal-hover: 6px 6px 0px 0px var(--color-ink);
+}
+
+@layer base {
+  html,
+  body {
+    @apply bg-cream text-ink font-grotesk m-0 p-0;
+  }
+
+  ::selection {
+    @apply bg-lilac text-ink;
+  }
+}
+
+@keyframes blink {
+  0%,
+  54% {
+    opacity: 1;
+  }
+  55%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
