@@ -1,10 +1,66 @@
 [
   {
-    "title": "EXAMPLE PROJECT",
+    "title": "Node Health CLI",
     "year": "2026",
-    "desc": "Replace this entry with a real project. Add as many objects to this array as you like — the index number (01, 02, …) and the alternating shadow colour are assigned automatically from the order.",
-    "tags": "TYPESCRIPT · REACT · POSTGRES",
-    "repo": "https://github.com/your-username/your-repo",
-    "live": "https://your-project.example.com"
+    "desc": "A Go CLI tool that connects to your local Kubernetes cluster and renders a color-coded node health dashboard in the terminal.",
+    "tags": "Golang, Kubernetes, Prometheus",
+    "repo": "https://github.com/LightCreator1007/node-health-cli",
+    "live": ""
+  },
+  {
+    "title": "SimpliNotes",
+    "year": "2025",
+    "desc": "A markdown based note taking app on the web, login on any device and piskup where you left off! (note: backend is non-functional after the free trial got over on railway)",
+    "tags": "JavaScript, React, Node,js, Express, MongoDB, Zustand, tailwind",
+    "repo": "https://github.com/LightCreator1007/SimpliNotes",
+    "live": "https://simpli-notes-2.vercel.app/"
+  },
+  {
+    "title": "Gitatui",
+    "year": "2025",
+    "desc": "A better git visualization TUI",
+    "tags": "Rust, git",
+    "repo": "https://github.com/LightCreator1007/Gitatui",
+    "live": ""
+  },
+  {
+    "title": "Zingpay",
+    "year": "2026",
+    "desc": "A Solana payment protocol that uses phone numbers as wallet identifiers.",
+    "tags": "Rust, TypeScript, Tailwind, Next.js",
+    "repo": "https://github.com/owlpharoah/zingPay",
+    "live": ""
+  },
+  {
+    "title": "useFlow",
+    "year": "2025",
+    "desc": "A desktop productivity app built with Electron.js that helps you manage workspaces, launch tools efficiently, and stay focused by blocking distracting applications.",
+    "tags": "Electron, React, Tailwind, JavaScript",
+    "repo": "https://github.com/LightCreator1007/use-Flow",
+    "live": ""
+  },
+  {
+    "title": "This Website!",
+    "year": "2026",
+    "desc": "My personal portfolio website.",
+    "tags": "Vue, Tailwind",
+    "repo": "https://github.com/LightCreator1007/arunit-portfolio-new",
+    "live": "https://lightcreator1007.github.io/arunit-portfolio-new/"
+  },
+  {
+    "title": "Russee",
+    "year": "2025",
+    "desc": "An asynchronous terminal file searcher.",
+    "tags": "Rust",
+    "repo": "https://github.com/LightCreator1007/russee",
+    "live": ""
+  },
+  {
+    "title": "lstrous",
+    "year": "2025",
+    "desc": "https://github.com/LightCreator1007/lstrous",
+    "tags": "Rust",
+    "repo": "https://github.com/LightCreator1007/lstrous",
+    "live": ""
   }
 ]

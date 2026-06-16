@@ -19,7 +19,10 @@ const projects = computed(() =>
     ...p,
     idx: String(i + 1).padStart(2, '0'),
     shadow: i % 2 === 0 ? MUSTARD : LILAC,
-    href: p.live || p.repo || undefined,
+    // Prioritize the GitHub repo as the primary link
+    href: p.repo || p.live || undefined,
+    // Only surface a separate live button when both links exist
+    liveHref: p.repo && p.live ? p.live : undefined,
   })),
 )
 
@@ -46,21 +49,28 @@ const count = computed(() => String(projects.value.length).padStart(2, '0'))
     </div>
 
     <div v-for="(p, i) in projects" :key="p.idx" v-reveal="i">
-      <component
-        :is="p.href ? 'a' : 'div'"
-        :href="p.href"
-        :target="p.href ? '_blank' : undefined"
-        :rel="p.href ? 'noopener noreferrer' : undefined"
+      <div
         :style="{ '--sh': p.shadow }"
-        class="mb-5.5 grid cursor-pointer grid-cols-[clamp(52px,11vw,110px)_1fr_auto] items-center gap-[clamp(12px,3vw,28px)] border-[3px] border-ink bg-paper px-[clamp(16px,4vw,30px)] py-[clamp(16px,3.5vw,26px)] text-ink no-underline shadow-[7px_7px_0_var(--sh)] transition-[transform,box-shadow] duration-150 hover:-translate-x-1.25 hover:-translate-y-1.25 hover:shadow-[12px_12px_0_#1c1b18]"
+        class="group relative mb-5.5 grid grid-cols-[clamp(52px,11vw,110px)_1fr_auto] items-center gap-[clamp(12px,3vw,28px)] border-[3px] border-ink bg-paper px-[clamp(16px,4vw,30px)] py-[clamp(16px,3.5vw,26px)] text-ink no-underline shadow-[7px_7px_0_var(--sh)] transition-[transform,box-shadow] duration-150 hover:-translate-x-1.25 hover:-translate-y-1.25 hover:shadow-[12px_12px_0_#1c1b18]"
+        :class="p.href && 'cursor-pointer'"
       >
+        <!-- Stretched primary link (GitHub repo when present) makes the whole card clickable -->
+        <a
+          v-if="p.href"
+          :href="p.href"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="absolute inset-0 z-0"
+          :aria-label="`Open ${p.title} repository`"
+        ></a>
+
         <div
           class="font-archivo text-[clamp(34px,8vw,68px)] leading-none text-[#e8dfc9]"
           style="-webkit-text-stroke: 2.5px #1c1b18"
         >
           {{ p.idx }}
         </div>
-        <div class="min-w-0">
+        <div class="relative z-10 min-w-0 pointer-events-none">
           <div class="flex flex-wrap items-baseline gap-4">
             <div class="font-archivo text-[clamp(21px,4.5vw,29px)] text-ink">{{ p.title }}</div>
             <div class="font-mono text-[12px] tracking-widest text-[#6e675b]">{{ p.year }}</div>
@@ -72,8 +82,21 @@ const count = computed(() => String(projects.value.length).padStart(2, '0'))
             {{ p.tags }}
           </div>
         </div>
-        <div class="self-start font-archivo text-[clamp(20px,4vw,30px)] text-ink">&#8599;</div>
-      </component>
+        <div class="relative z-10 flex flex-col items-end gap-2.5 self-start">
+          <div class="font-archivo text-[clamp(20px,4vw,30px)] text-ink pointer-events-none">
+            &#8599;
+          </div>
+          <a
+            v-if="p.liveHref"
+            :href="p.liveHref"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 border-[2.5px] border-ink bg-[#c9b8e8] px-3 py-1.5 font-mono text-[11px] font-bold tracking-[0.14em] text-ink no-underline shadow-[3px_3px_0_#1c1b18] transition-[transform,box-shadow] duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#1c1b18] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0_#1c1b18]"
+          >
+            LIVE <span aria-hidden="true">&#8599;</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
