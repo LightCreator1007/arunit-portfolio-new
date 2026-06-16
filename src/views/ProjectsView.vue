@@ -91,7 +91,7 @@ const count = computed(() => String(projects.value.length).padStart(2, '0'))
             :href="p.liveHref"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-1.5 border-[2.5px] border-ink bg-[#c9b8e8] px-3 py-1.5 font-mono text-[11px] font-bold tracking-[0.14em] text-ink no-underline shadow-[3px_3px_0_#1c1b18] transition-[transform,box-shadow] duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#1c1b18] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0_#1c1b18]"
+            class="inline-flex items-center gap-1.5 border-[2.5px] border-ink bg-lilac px-3 py-1.5 font-mono text-[11px] font-bold tracking-[0.14em] text-ink no-underline shadow-[3px_3px_0_#1c1b18] transition-[transform,box-shadow] duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#1c1b18] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0_#1c1b18]"
           >
             LIVE <span aria-hidden="true">&#8599;</span>
           </a>

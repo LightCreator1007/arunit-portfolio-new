@@ -29,7 +29,7 @@ const socialBase =
         >
         <a
           :class="[socialBase, 'hover:border-mustard hover:bg-mustard hover:text-ink']"
-          href="www.linkedin.com/in/arunit-chakraborty"
+          href="https://www.linkedin.com/in/arunit-chakraborty"
           >LINKEDIN &#8599;</a
         >
         <a
