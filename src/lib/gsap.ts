@@ -8,7 +8,6 @@ export function reduceMotion(): boolean {
   )
 }
 
-// Shared motion tokens so every animation on the site shares the same feel.
 export const EASE = {
   out: 'power3.out',
   soft: 'power2.out',
