@@ -86,7 +86,8 @@ onMounted(() => {
 
     // Micro: skill chips lift on hover.
     chips.forEach((chip) => {
-      const enter = () => gsap.to(chip, { y: -4, scale: 1.05, duration: DUR.micro, ease: EASE.soft })
+      const enter = () =>
+        gsap.to(chip, { y: -4, scale: 1.05, duration: DUR.micro, ease: EASE.soft })
       const leave = () => gsap.to(chip, { y: 0, scale: 1, duration: DUR.micro, ease: EASE.soft })
       chip.addEventListener('mouseenter', enter)
       chip.addEventListener('mouseleave', leave)
@@ -117,7 +118,7 @@ const cardGrid = {
 const skills = [
   { label: 'C++', bg: '' },
   { label: 'python', bg: '' },
-  { label: 'Javascrip', bg: '' },
+  { label: 'Javascript', bg: '' },
   { label: 'Golang', bg: '' },
   { label: 'React', bg: '' },
   { label: 'Vue', bg: '' },
