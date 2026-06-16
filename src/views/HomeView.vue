@@ -53,7 +53,7 @@ const tickerHalf = tickerText.repeat(2)
           </div>
 
           <h1
-            class="mt-1.5 mb-9 font-archivo text-[clamp(34px,8.5vw,86px)] leading-[1.02] tracking-[-0.01em]"
+            class="mt-9 mb-3 font-archivo text-[clamp(34px,8.5vw,86px)] leading-[1.02] tracking-[-0.01em]"
           >
             ARUNIT<br />CHAKRABORTY
           </h1>

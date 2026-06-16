@@ -6,7 +6,7 @@ const route = useRoute()
 
 const isHome = computed(() => route.name === 'home')
 const isProjects = computed(() => route.name === 'projects')
-const isBlogish = computed(() => route.name === 'blog' || route.name === 'post')
+const isBlogish = computed(() => route.name === 'blogs' || route.name === 'post')
 
 const navBase =
   'font-mono text-[clamp(11px,2.8vw,13px)] font-semibold tracking-[0.06em] ' +
@@ -37,7 +37,7 @@ const navState = (active: boolean) => (active ? 'bg-ink text-cream' : 'bg-transp
     <nav class="flex gap-[clamp(6px,1.5vw,10px)]">
       <RouterLink to="/" :class="[navBase, navState(isHome)]">HOME</RouterLink>
       <RouterLink to="/projects" :class="[navBase, navState(isProjects)]">PROJECTS</RouterLink>
-      <RouterLink to="/blog" :class="[navBase, navState(isBlogish)]">BLOG</RouterLink>
+      <RouterLink to="/blogs" :class="[navBase, navState(isBlogish)]">BLOG</RouterLink>
     </nav>
   </header>
 </template>

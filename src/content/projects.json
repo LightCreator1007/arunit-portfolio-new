@@ -1,0 +1,10 @@
+[
+  {
+    "title": "EXAMPLE PROJECT",
+    "year": "2026",
+    "desc": "Replace this entry with a real project. Add as many objects to this array as you like — the index number (01, 02, …) and the alternating shadow colour are assigned automatically from the order.",
+    "tags": "TYPESCRIPT · REACT · POSTGRES",
+    "repo": "https://github.com/your-username/your-repo",
+    "live": "https://your-project.example.com"
+  }
+]

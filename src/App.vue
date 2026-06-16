@@ -3,6 +3,13 @@ import { onMounted, onUnmounted } from 'vue'
 import { RouterView } from 'vue-router'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
+import { createLenis } from './lib/lenis'
+
+let destroyLenis: (() => void) | undefined
+onMounted(() => {
+  destroyLenis = createLenis()
+})
+onUnmounted(() => destroyLenis?.())
 </script>
 
 <template>
