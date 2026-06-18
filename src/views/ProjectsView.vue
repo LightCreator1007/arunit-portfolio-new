@@ -51,7 +51,7 @@ const count = computed(() => String(projects.value.length).padStart(2, '0'))
     <div v-for="(p, i) in projects" :key="p.idx" v-reveal="i">
       <div
         :style="{ '--sh': p.shadow }"
-        class="group relative mb-5.5 grid grid-cols-[clamp(52px,11vw,110px)_1fr_auto] items-center gap-[clamp(12px,3vw,28px)] border-[3px] border-ink bg-paper px-[clamp(16px,4vw,30px)] py-[clamp(16px,3.5vw,26px)] text-ink no-underline shadow-[7px_7px_0_var(--sh)] transition-[transform,box-shadow] duration-150 hover:-translate-x-1.25 hover:-translate-y-1.25 hover:shadow-[12px_12px_0_#1c1b18]"
+        class="group relative mb-5.5 grid min-h-[clamp(132px,22vw,150px)] grid-cols-[clamp(52px,11vw,110px)_1fr_auto] items-center gap-[clamp(12px,3vw,28px)] border-[3px] border-ink bg-paper px-[clamp(16px,4vw,30px)] py-[clamp(16px,3.5vw,26px)] text-ink no-underline shadow-[7px_7px_0_var(--sh)] transition-[transform,box-shadow] duration-150 hover:-translate-x-1.25 hover:-translate-y-1.25 hover:shadow-[12px_12px_0_#1c1b18]"
         :class="p.href && 'cursor-pointer'"
       >
         <!-- Stretched primary link (GitHub repo when present) makes the whole card clickable -->
@@ -75,7 +75,9 @@ const count = computed(() => String(projects.value.length).padStart(2, '0'))
             <div class="font-archivo text-[clamp(21px,4.5vw,29px)] text-ink">{{ p.title }}</div>
             <div class="font-mono text-[12px] tracking-widest text-[#6e675b]">{{ p.year }}</div>
           </div>
-          <div class="mt-1.75 max-w-[62ch] text-[clamp(15px,2vw,16px)] leading-normal text-ink">
+          <div
+            class="mt-1.75 line-clamp-2 max-w-[62ch] text-[clamp(15px,2vw,16px)] leading-normal text-ink"
+          >
             {{ p.desc }}
           </div>
           <div class="mt-3 font-mono text-[12px] font-semibold tracking-widest text-[#6e675b]">
