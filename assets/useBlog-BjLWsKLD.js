@@ -1,4 +1,4 @@
-import{g as e,i as t}from"./index-DlSIYc_g.js";var n=Object.defineProperty,r=(e,t)=>{let r={};for(var i in e)n(r,i,{get:e[i],enumerable:!0});return t||n(r,Symbol.toStringTag,{value:`Module`}),r},i=`---
+import{g as e,i as t}from"./index-irX7dg3d.js";var n=Object.defineProperty,r=(e,t)=>{let r={};for(var i in e)n(r,i,{get:e[i],enumerable:!0});return t||n(r,Symbol.toStringTag,{value:`Module`}),r},i=`---
 tag: TECH
 date: 2026-06-16
 blurb: C++ made cleanup a constructor's job. Rust made it the compiler's job -- and deleted whole bug classes on the way.
