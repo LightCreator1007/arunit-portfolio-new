@@ -10,7 +10,7 @@ const post = computed(() => getPost(props.slug))
 const next = computed(() => getNextPost(props.slug))
 
 function openNext() {
-  if (next.value) router.push(`/blog/${next.value.slug}`)
+  if (next.value) router.push(`/blogs/${next.value.slug}`)
 }
 </script>
 
@@ -75,7 +75,7 @@ function openNext() {
     </h1>
     <p class="mb-7 text-[18px] leading-[1.7]">That post doesn&rsquo;t exist (or was renamed).</p>
     <RouterLink
-      to="/blog"
+      to="/blogs"
       class="inline-block cursor-pointer border-[3px] border-ink bg-paper px-3.5 py-1.75 font-mono text-[12px] font-bold tracking-widest text-ink no-underline shadow-[4px_4px_0_#1c1b18] transition-[transform,box-shadow] duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_#1c1b18]"
     >
       &larr; ALL POSTS
