@@ -1,4 +1,4 @@
-import{g as e,i as t}from"./index-90vgfIgV.js";var n=Object.defineProperty,r=(e,t)=>{let r={};for(var i in e)n(r,i,{get:e[i],enumerable:!0});return t||n(r,Symbol.toStringTag,{value:`Module`}),r},i=`---
+import{g as e,i as t}from"./index-5zYF-WYT.js";var n=Object.defineProperty,r=(e,t)=>{let r={};for(var i in e)n(r,i,{get:e[i],enumerable:!0});return t||n(r,Symbol.toStringTag,{value:`Module`}),r},i=`---
 tag: DEFI
 date: 2026-06-29
 blurb: Nobody sits on the other side of a decentralized trade. A formula does. Here is how it sets prices, why the people funding it quietly lose money, and how fees and arbitrage square the books.
