@@ -1,4 +1,4 @@
-import{g as e,i as t}from"./index-BXIa_pcH.js";var n=Object.defineProperty,r=(e,t)=>{let r={};for(var i in e)n(r,i,{get:e[i],enumerable:!0});return t||n(r,Symbol.toStringTag,{value:`Module`}),r},i=`---
+import{g as e,i as t}from"./index-BD9wn4GI.js";var n=Object.defineProperty,r=(e,t)=>{let r={};for(var i in e)n(r,i,{get:e[i],enumerable:!0});return t||n(r,Symbol.toStringTag,{value:`Module`}),r},i=`---
 tag: DEFI
 date: 2026-06-29
 blurb: Nobody sits on the other side of a decentralized trade. A formula does. Here is how it sets prices, why the people funding it quietly lose money, and how fees and arbitrage square the books.
@@ -407,7 +407,7 @@ If C++ invented RAII, Rust industrialized it. And both languages are better for 
 `,o=`---
 tag: TECH
 date: 2026-09-05
-blurb: The tools your AI runs have every permission you do. I spent five weeks trying to lock them in a box that starts with nothing and gets handed things one at a time. Here is what worked, what did not, and the much simpler idea I should have had four weeks earlier.
+blurb: The tools your AI runs have every permission you do. I tried to lock them in a box that starts with nothing and gets handed abilities one at a time. Here is what worked, what did not, and the simpler idea I probably should have had first.
 ---
 
 # Thinking Inside The Box
