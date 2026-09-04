@@ -1,7 +1,7 @@
 ---
 tag: TECH
 date: 2026-09-05
-blurb: The tools your AI runs have every permission you do. I spent five weeks trying to lock them in a box that starts with nothing and gets handed things one at a time. Here is what worked, what did not, and the much simpler idea I should have had four weeks earlier.
+blurb: The tools your AI runs have every permission you do. I tried to lock them in a box that starts with nothing and gets handed abilities one at a time. Here is what worked, what did not, and the simpler idea I probably should have had first.
 ---
 
 # Thinking Inside The Box
